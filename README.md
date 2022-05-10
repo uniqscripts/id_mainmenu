@@ -29,7 +29,7 @@ Setting up this resource is **not difficult** at all, you need the most basic kn
 
 > **Instructions** for setting up this resource can be found in the **SETUP.md** file.
 
-In the upcoming period, various resources will be updated on this resource, and some of them are:
+In the upcoming period, various updates will be done on this resource, and some of them are::
 * QBCore version
 * Better and simpler configuration
 * Level System connected with this menu
