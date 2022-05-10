@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Main Menu</title>
+	<link rel="stylesheet" type="text/css" id="applicationStylesheet" href="style.css"/>
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="inventory">
+			<div id="inventorytext">
+				<span>INVENTORY</span>
+			</div>
+			<svg class="inventoryshape_k">
+				<linearGradient id="inventoryshape_k" spreadMethod="pad" x1="0" x2="1" y1="0.023" y2="1">
+					<stop offset="0" stop-color="#fff" stop-opacity="0.702"></stop>
+					<stop offset="0.3022" stop-color="#f1f1f1" stop-opacity="0"></stop>
+					<stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+				</linearGradient>
+				<rect id="inventoryshape_k" rx="10" ry="10" x="0" y="0" width="19.2188vw" height="36.9444vh">
+				</rect>
+			</svg>
+			<div id="imagesinv">
+				<img id="inventorysmall" src="img/inventorysmall.png">
+					
+				<img id="inventorybig" src="img/inventorybig.png">
+					
+			</div>
+			<div id="inventorysmalltext">
+				<span>Take a look on your inventory items.</span>
+			</div>
+		</div>
+		<div id="billing">
+			<svg class="billingshape_r">
+				<linearGradient id="billingshape_r" spreadMethod="pad" x1="0" x2="0.973" y1="0" y2="1">
+					<stop offset="0" stop-color="#78fef9" stop-opacity="0"></stop>
+					<stop offset="0.5166" stop-color="#78fef9" stop-opacity="0"></stop>
+					<stop offset="1" stop-color="#78fef9" stop-opacity="1"></stop>
+				</linearGradient>
+				<rect id="billingshape_r" rx="10" ry="10" x="0" y="0" width="19.2188vw" height="35.2778vh">
+				</rect>
+			</svg>
+			<div id="billingtext">
+				<span>BILLING</span>
+			</div>
+			<div id="billingsmalltext">
+				<span>Take a look on unpaid bills.</span>
+			</div>
+			<div id="imagesbill">
+				<img id="billingsmall" src="img/billingsmall.png">
+					
+				<img id="billingbil" src="img/billingbil.png">
+					
+			</div>
+		</div>
+		<div id="playerinfo">
+			<svg class="playerinfoshape_z">
+				<linearGradient id="playerinfoshape_z" spreadMethod="pad" x1="0" x2="0.989" y1="0" y2="0.985">
+					<stop offset="0" stop-color="#4f8f53" stop-opacity="1"></stop>
+					<stop offset="0.771" stop-color="#6ba06e" stop-opacity="0"></stop>
+					<stop offset="1" stop-color="#808080" stop-opacity="0"></stop>
+				</linearGradient>
+				<rect id="playerinfoshape_z" rx="10" ry="10" x="0" y="0" width="43.6458vw" height="43.1481vh">
+				</rect>
+			</svg>
+			<div id="playername">
+				<span>FIRSTNAME LASTNAME</span>
+			</div>
+			<div id="level">
+				<svg class="levelshape">
+					<ellipse id="levelshape" rx="85.24126434326172" ry="85.24126434326172" cx="85.24126434326172" cy="85.24126434326172">
+					</ellipse>
+				</svg>
+				<div id="leveltext">
+					<span>LEVEL</span>
+				</div>
+				<div id="whatlevel">
+					<span>1</span>
+				</div>
+			</div>
+			<div id="money">
+				<div id="bankamount">
+					<span>999,999,999$</span>
+				</div>
+				<div id="walletamount">
+					<span>999,999,999$</span>
+				</div>
+			</div>
+			<div id="imagesplayerinfo">
+				<img id="bankimg" src="img/bankimg.png">
+					
+				<img id="wallet" src="img/wallet.png">
+					
+				<img id="job" src="img/job.png">
+					
+			</div>
+			<div id="jobname">
+				<span>UNEMPLOYED - GRADE</span>
+			</div>
+			<div id="numberofphone">
+				<div id="phonenumber">
+					<span>429-133-791-3</span>
+				</div>
+				<img id="phonenumberimg" src="img/phonenumberimg.png">
+					
+			</div>
+		</div>
+		<div id="administratorcontact">
+			<svg class="admincontactshape">
+				<rect id="admincontactshape" rx="10" ry="10" x="0" y="0" width="26.6146vw" height="12.4074vh">
+				</rect>
+			</svg>
+			<img id="admincontactmg" src="img/admincontactmg.png">
+				
+			<div id="administratorcontact_bj">
+				<span>ADMINISTRATION CONTACT</span>
+			</div>
+		</div>
+		<div id="shop">
+			<svg class="shopshape_bm">
+				<linearGradient id="shopshape_bm" spreadMethod="pad" x1="0.019" x2="1" y1="0.576" y2="0.737">
+					<stop offset="0" stop-color="#38d5a0" stop-opacity="1"></stop>
+					<stop offset="0.5452" stop-color="#40dad3" stop-opacity="0.157"></stop>
+					<stop offset="1" stop-color="#43d8ef" stop-opacity="0"></stop>
+				</linearGradient>
+				<rect id="shopshape_bm" rx="10" ry="10" x="0" y="0" width="26.6146vw" height="20vh">
+				</rect>
+			</svg>
+			<div id="shoptext">
+				<span>SHOP</span>
+			</div>
+				
+			<img id="shopimg" src="img/shopimg.png">
+			
+			<img id="shopgold" src="img/shopgold.png">
+
+		</div>
+		<div id="cardealership">
+			<svg class="cardealershipshape_bs">
+				<linearGradient id="cardealershipshape_bs" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+					<stop offset="0" stop-color="#b24f4f" stop-opacity="1"></stop>
+					<stop offset="0.477" stop-color="#b24f4f" stop-opacity="1"></stop>
+					<stop offset="1" stop-color="#fff" stop-opacity="0"></stop>
+				</linearGradient>
+				<rect id="cardealershipshape_bs" rx="20" ry="20" x="0" y="0" width="26.6146vw" height="45vh">
+				</rect>
+			</svg>
+			<div id="cardealershiptext">
+				<span>CAR DEALERSHIP</span>
+			</div>
+			<div id="inventorysmalltext_bu">
+				<span>Take a look on the car dealership and find a vehicle<br/>you like.</span>
+			</div>
+			<img id="vehicle" src="img/vehicle.png">
+				
+			<img id="vehiclebig" src="img/vehiclebig.png">
+				
+		</div>
+		<div id="jobcenter">
+			<svg class="jobcentershape_bz">
+				<linearGradient id="jobcentershape_bz" spreadMethod="pad" x1="0.5" x2="0.5" y1="0" y2="1">
+					<stop offset="0" stop-color="#8676dc" stop-opacity="0.8"></stop>
+					<stop offset="0.6266" stop-color="#8676dc" stop-opacity="0.369"></stop>
+					<stop offset="1" stop-color="#322862" stop-opacity="0"></stop>
+				</linearGradient>
+				<rect id="jobcentershape_bz" rx="3" ry="3" x="0" y="0" width="16.7708vw" height="45vh">
+				</rect>
+			</svg>
+			<img id="jobcenterimg" src="img/jobcenterimg.png">
+				
+			<div id="jobcentertext">
+				<span>JOB CENTER</span>
+			</div>
+			<div id="jobcentersmall">
+				<span>Find a job to your liking and get<br/>employed.</span>
+			</div>
+			<img id="jobcenterimg2" src="img/jobcenterimg2.png">
+				
+		</div>
+		<div id="primeaccount">
+			<svg class="primeaccountshape">
+				<rect id="primeaccountshape" rx="10" ry="10" x="0" y="0" width="16.7708vw" height="37.4074vh">
+				</rect>
+			</svg>
+			<div id="primeaccounttext">
+				<span>PRIME ACCOUNT</span>
+			</div>
+			<img id="crownbig" src="img/crownbig.png">
+				
+			<img id="crownsmall" src="img/crownsmall.png">
+				
+			<div id="privileges">
+				<span>Prime Account Privileges</span>
+			</div>
+			<div id="privilegeslist">
+				<span>
+					- Privilege 1<br/>
+					- Privilege 2<br/>
+					- Privilege 3<br/>
+					- Privilege 4<br/>
+					- Privilege 5<br/>
+					- Privilege 6<br/>
+					- Privilege 7<br/>
+					- Privilege 8<br/>
+					- Privilege 9<br/>
+					- Privilege 10<br/>
+					- Privilege 11<br/>
+					- Privilege 12<br/>
+					- Privilege 13<br/>
+					- Privilege 14<br/>
+					- Privilege 15<br/>
+					- Privilege 16<br/>
+				</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
