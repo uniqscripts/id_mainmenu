@@ -15,7 +15,7 @@ Go to config.lua and set "GlobalState.LevelSystem = false"
 - If you are using any other Inventory script, then you have to TriggerEvent for opening UI of that Inventory. For example:
 esx_inventoryhud does not have trigger for opening it's UI, but it has function, so we will make trigger and put that function inside the trigger, it will look like this:
 RegisterNetEvent("esx_inventoryhud:openInventory")
-AddEventHandler("esx_inventoryhud:openInventory", funciton()
+AddEventHandler("esx_inventoryhud:openInventory", function()
     openInventory()
 end)
 - If you still need help and do not know how to set it up, contact us on our Discord server.
