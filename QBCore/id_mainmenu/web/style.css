@@ -1,0 +1,853 @@
+@import url('https://fonts.cdnfonts.com/css/akrobat');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	-webkit-user-drag: none;
+  	-khtml-user-drag: none;
+  	-moz-user-drag: none;
+  	-o-user-drag: none;
+}
+
+#container {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(125.6deg, rgba(19, 96, 138, 0.955) 0%, rgba(80, 123, 133, 0.955) 100%);
+	overflow: hidden;
+}
+
+#inventory {
+	position: absolute;
+	width: 19.2188vw;
+	height: 44.4444vh;
+	left: 77.9688vw;
+	top: 55.5556vh;
+	overflow: visible;
+	opacity: 0.9;
+	transition: .35s;
+}
+
+#inventory:hover {
+	opacity: 1.0;
+	transform: scale(1.02);
+}
+
+#inventorytext {
+	left: 4.6354vw;
+	top: 12.037vh;
+	position: absolute;
+	overflow: visible;
+	width: 10.0521vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.3438vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#inventoryshape_k {
+	fill: url(#inventoryshape_k);
+	stroke: rgba(255,255,255,1);
+	stroke-width: 0.2604vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.inventoryshape_k {
+	position: absolute;
+	overflow: visible;
+	width: 19.2188vw;
+	height: 36.9444vh;
+	left: 0vw;
+	top: 0vh;
+}
+
+#imagesinv {
+	position: absolute;
+	width: 13.6458vw;
+	height: 37.3148vh;
+	left: 2.8125vw;
+	top: 7.1296vh;
+	overflow: visible;
+}
+
+#inventorysmall {
+	position: absolute;
+	width: 2.1354vw;
+	height: 3.7963vh;
+	left: 5.7813vw;
+	top: 0vh;
+	overflow: visible;
+}
+
+#inventorybig {
+	position: absolute;
+	width: 13.6458vw;
+	height: 24.2593vh;
+	left: 0vw;
+	top: 13.0556vh;
+	overflow: visible;
+}
+
+#inventorysmalltext {
+	filter: drop-shadow(0vw 0vw 0.2083vw rgba(0, 0, 0, 1));
+	left: 2.5521vw;
+	top: 18.5185vh;
+	position: absolute;
+	overflow: visible;
+	width: 14.2188vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.0417vw;
+	color: rgba(255,255,255,1);
+}
+
+#billing {
+	position: absolute;
+	width: 19.2188vw;
+	height: 41.1111vh;
+	left: 53.5417vw;
+	top: 57.7778vh;
+	overflow: visible;
+	opacity: 0.9;
+	transition: .35s;
+}
+
+#billing:hover {
+	opacity: 1.0;
+	transform: scale(1.02);
+}
+
+#billingshape_r {
+	fill: url(#billingshape_r);
+	stroke: rgba(120,254,249,1);
+	stroke-width: 0.2604vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.billingshape_r {
+	position: absolute;
+	overflow: visible;
+	width: 19.2188vw;
+	height: 35.2778vh;
+	left: 0vw;
+	top: 0vh;
+}
+
+#billingtext {
+	left: 6.1979vw;
+	top: 9.6296vh;
+	position: absolute;
+	overflow: visible;
+	width: 6.9271vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.3438vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#billingsmalltext {
+	filter: drop-shadow(0vw 0vw 0.2083vw rgba(0, 0, 0, 1));
+	left: 4.4271vw;
+	top: 16.2037vh;
+	position: absolute;
+	overflow: visible;
+	width: 10.4688vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.0417vw;
+	color: rgba(255,255,255,1);
+}
+
+#imagesbill {
+	position: absolute;
+	width: 16.0417vw;
+	height: 36.0185vh;
+	left: 0.5208vw;
+	top: 5.0926vh;
+	overflow: visible;
+}
+
+#billingsmall {
+	position: absolute;
+	width: 2.1354vw;
+	height: 3.7963vh;
+	left: 8.0208vw;
+	top: 0vh;
+	overflow: visible;
+}
+
+#billingbil {
+	position: absolute;
+	width: 16.0417vw;
+	height: 21.3889vh;
+	left: 0vw;
+	top: 14.6296vh;
+	overflow: visible;
+}
+
+#playerinfo {
+	position: absolute;
+	width: 43.6458vw;
+	height: 43.1481vh;
+	left: 53.5417vw;
+	top: 5vh;
+	overflow: visible;
+	opacity: 0.9;
+	transition: .35s;
+}
+
+#playerinfo:hover {
+	opacity: 1.0;
+	transform: scale(1.02);
+}
+
+#playerinfoshape_z {
+	fill: url(#playerinfoshape_z);
+}
+
+.playerinfoshape_z {
+	position: absolute;
+	overflow: visible;
+	width: 43.6458vw;
+	height: 43.1481vh;
+	left: 0vw;
+	top: 0vh;
+}
+
+#playername {
+	filter: drop-shadow(0vw 0.1563vw 0.3125vw rgba(0, 0, 0, 0.612));
+	left: 8.5521vw;
+	top: 33.7037vh;
+	position: absolute;
+	overflow: visible;
+	width: 23.5938vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.7604vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#level {
+	position: absolute;
+	width: 9.1837vw;
+	height: 16.3267vh;
+	left: 27.9256vw;
+	top: 4.4072vh;
+	overflow: visible;
+}
+
+#levelshape {
+	fill: transparent;
+	stroke: rgba(255,255,255,0.651);
+	stroke-width: 0.1563vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.levelshape {
+	width: 8.8793vw;
+	height: 15.7855vh;
+	position: absolute;
+	overflow: visible;
+	transform: translate(0vw, 0vw) matrix(1,0,0,1,2.9229,2.923) rotate(2deg);
+	transform-origin: center;
+}
+
+#leveltext {
+	left: 2.491vw;
+	top: 9.3891vh;
+	position: absolute;
+	overflow: visible;
+	width: 4.3229vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.9271vw;
+	color: rgba(255,255,255,1);
+}
+
+#whatlevel {
+	left: 3.7056vw;
+	top: 1.9817vh;
+	position: absolute;
+	overflow: visible;
+	width: 1.0938vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3.4896vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#money {
+	position: absolute;
+	width: 7.2396vw;
+	height: 8.3333vh;
+	left: 6.3542vw;
+	top: 6.8519vh;
+	overflow: visible;
+}
+
+#bankamount {
+	left: 0vw;
+	top: 0vh;
+	position: absolute;
+	overflow: visible;
+	width: 7.2917vw;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5104vw;
+	color: rgba(255,255,255,1);
+}
+
+#walletamount {
+	left: 0vw;
+	top: 5.0926vh;
+	position: absolute;
+	overflow: visible;
+	width: 7.2917vw;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5104vw;
+	color: rgba(255,255,255,1);
+}
+
+#imagesplayerinfo {
+	position: absolute;
+	width: 1.9792vw;
+	height: 13.9815vh;
+	left: 3.5937vw;
+	top: 6.7593vh;
+	overflow: visible;
+}
+
+#bankimg {
+	position: absolute;
+	width: 1.9271vw;
+	height: 3.4259vh;
+	left: 0vw;
+	top: 0vh;
+	overflow: visible;
+}
+
+#wallet {
+	position: absolute;
+	width: 1.9792vw;
+	height: 3.0556vh;
+	left: 0vw;
+	top: 5.2778vh;
+	overflow: visible;
+}
+
+#job {
+	position: absolute;
+	width: 1.875vw;
+	height: 3.7963vh;
+	left: 0vw;
+	top: 10.1852vh;
+	overflow: visible;
+}
+
+#jobname {
+	left: 6.3542vw;
+	top: 17.2222vh;
+	position: absolute;
+	overflow: visible;
+	width: 12.5521vw;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.5104vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#numberofphone {
+	position: absolute;
+	width: 11.3542vw;
+	height: 9.8148vh;
+	left: 16.1458vw;
+	top: 23.0556vh;
+	overflow: visible;
+}
+
+#phonenumber {
+	filter: drop-shadow(0vw 0vw 0.5208vw rgba(255, 255, 255, 1));
+	left: 0vw;
+	top: 4.9074vh;
+	position: absolute;
+	overflow: visible;
+	width: 11.4063vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.2917vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#phonenumberimg {
+	position: absolute;
+	width: 2.1354vw;
+	height: 3.8037vh;
+	left: 4.6354vw;
+	top: 0vh;
+	overflow: visible;
+}
+
+#administratorcontact {
+	position: absolute;
+	width: 26.6146vw;
+	height: 12.4074vh;
+	left: 21.7188vw;
+	top: 80.7407vh;
+	overflow: visible;
+	opacity: 0.9;
+	transition: .35s;
+}
+
+#administratorcontact:hover {
+	opacity: 1.0;
+	transform: scale(1.02);
+}
+
+#admincontactshape {
+	fill: rgba(0,0,0,0.4);
+}
+
+.admincontactshape {
+	position: absolute;
+	overflow: visible;
+	width: 26.6146vw;
+	height: 12.4074vh;
+	left: 0vw;
+	top: 0vh;
+}
+
+#admincontactmg {
+	opacity: 0.85;
+	position: absolute;
+	width: 1.9604vw;
+	height: 3.4852vh;
+	left: 20.6636vw;
+	top: 4.5017vh;
+	overflow: visible;
+}
+
+#administratorcontact_bj {
+	left: 3.75vw;
+	top: 4.6296vh;
+	position: absolute;
+	overflow: visible;
+	width: 14.7396vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.4583vw;
+	color: rgba(255,255,255,1);
+}
+
+#shop {
+	position: absolute;
+	width: 28.2292vw;
+	height: 21.9444vh;
+	left: 21.7188vw;
+	top: 56.5741vh;
+	overflow: visible;
+	opacity: 0.9;
+	transition: .35s;
+}
+
+#shop:hover {
+	opacity: 1.0;
+	transform: scale(1.02);
+}
+
+#shopshape_bm {
+	fill: url(#shopshape_bm);
+	stroke: rgba(60,222,167,1);
+	stroke-width: 0.2604vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.shopshape_bm {
+	position: absolute;
+	overflow: visible;
+	width: 26.6146vw;
+	height: 20vh;
+	left: 0vw;
+	top: 0vh;
+}
+
+#shoptext {
+	filter: drop-shadow(0vw 0.0521vw 0.3125vw rgba(0, 0, 0, 1));
+	left: 6.1979vw;
+	top: 6.8519vh;
+	position: absolute;
+	overflow: visible;
+	width: 6.1979vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.9688vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#shopgold {
+	filter: drop-shadow(0vw 0vw 2.1563vw rgba(255, 215, 0, 1));
+	position: absolute;
+	width: 15vw;
+	height: 22vh;
+	left: 13.4271vw;
+	top: 1.4444vh;
+	overflow: visible;
+}
+
+#shopimg {
+	filter: drop-shadow(0vw 0vw 0.0008vw rgba(0, 0, 0, 1));
+	position: absolute;
+	left: 0.9792vw;
+	top: 7.3333vh;
+	overflow: visible;
+}
+
+#cardealership {
+	position: absolute;
+	width: 26.6146vw;
+	height: 49.3519vh;
+	left: 21.7188vw;
+	top: 5vh;
+	overflow: visible;
+	opacity: 0.9;
+	transition: .35s;
+}
+
+#cardealership:hover {
+	opacity: 1.0;
+	transform: scale(1.02);
+}
+
+#cardealershipshape_bs {
+	fill: url(#cardealershipshape_bs);
+	stroke: rgba(178,79,79,1);
+	stroke-width: 0.2604vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.cardealershipshape_bs {
+	position: absolute;
+	overflow: visible;
+	width: 26.6146vw;
+	height: 45vh;
+	left: 0vw;
+	top: 0vh;
+}
+
+#cardealershiptext {
+	left: 5.2604vw;
+	top: 7.8704vh;
+	position: absolute;
+	overflow: visible;
+	width: 16.1979vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.5521vw;
+	color: rgba(255,255,255,1);
+	text-transform: uppercase;
+}
+
+#inventorysmalltext_bu {
+	filter: drop-shadow(0vw 0vw 0.2083vw rgba(0, 0, 0, 1));
+	left: 3.2813vw;
+	top: 15.5556vh;
+	position: absolute;
+	overflow: visible;
+	width: 20.1563vw;
+	height: 4.4444vh;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.0417vw;
+	color: rgba(255,255,255,1);
+}
+
+#vehicle {
+	position: absolute;
+	width: 2.1354vw;
+	height: 3.3218vh;
+	left: 12.2396vw;
+	top: 3.8889vh;
+	overflow: visible;
+}
+
+#vehiclebig {
+	position: absolute;
+	width: 22.2917vw;
+	height: 22.3148vh;
+	left: 1.25vw;
+	top: 27.037vh;
+	overflow: visible;
+}
+
+#jobcenter {
+	position: absolute;
+	width: 16.7708vw;
+	height: 46.6667vh;
+	left: 2.8646vw;
+	top: 48.1481vh;
+	overflow: visible;
+	opacity: 0.9;
+	transition: .35s;
+}
+
+#jobcenter:hover {
+	opacity: 1.0;
+	transform: scale(1.02);
+}
+
+#jobcentershape_bz {
+	fill: url(#jobcentershape_bz);
+	stroke: rgba(134,118,220,0.722);
+	stroke-width: 0.2604vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.jobcentershape_bz {
+	position: absolute;
+	overflow: visible;
+	width: 16.7708vw;
+	height: 45vh;
+	left: 0vw;
+	top: 0vh;
+}
+
+#jobcenterimg {
+	position: absolute;
+	width: 2.1354vw;
+	height: 5.0618vh;
+	left: 7.3438vw;
+	top: 4.537vh;
+	overflow: visible;
+}
+
+#jobcentertext {
+	left: 3.125vw;
+	top: 11.1111vh;
+	position: absolute;
+	overflow: visible;
+	width: 10.5729vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 2.3438vw;
+	color: rgba(255,255,255,1);
+}
+
+#jobcentersmall {
+	filter: drop-shadow(0vw 0vw 0.2083vw rgba(0, 0, 0, 1));
+	left: 2.1354vw;
+	top: 17.5926vh;
+	position: absolute;
+	overflow: visible;
+	width: 12.5521vw;
+	height: 4.4444vh;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.0417vw;
+	color: rgba(255,255,255,1);
+}
+
+#jobcenterimg2 {
+	filter: drop-shadow(0vw 0vw 2.1563vw rgba(129, 133, 220, 1));
+	position: absolute;
+	width: 13.2292vw;
+	height: 20.0926vh;
+	left: 1.7708vw;
+	top: 26.5741vh;
+	overflow: visible;
+}
+
+#primeaccount {
+	position: absolute;
+	width: 20.2604vw;
+	height: 46.4815vh;
+	left: -0.625vw;
+	top: -4.0741vh;
+	overflow: visible;
+	opacity: 0.9;
+	transition: .35s;
+}
+
+#primeaccount:hover {
+	opacity: 1.0;
+	transform: scale(1.02);
+}
+
+#primeaccountshape {
+	fill: rgba(219,228,100,0.702);
+	stroke: rgba(219,228,100,1);
+	stroke-width: 0.2604vw;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+
+.primeaccountshape {
+	position: absolute;
+	overflow: visible;
+	width: 16.7708vw;
+	height: 37.4074vh;
+	left: 3.4896vw;
+	top: 9.0741vh;
+}
+
+#primeaccounttext {
+	filter: drop-shadow(0vw 0vw 0.5208vw rgba(255, 255, 255, 1));
+	left: 5.9375vw;
+	top: 19.537vh;
+	position: absolute;
+	overflow: visible;
+	width: 12.0313vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.9271vw;
+	color: rgba(255,255,255,1);
+}
+
+#crownbig {
+	position: absolute;
+	transform: rotate(-10deg);
+	width: 10.2604vw;
+	height: 18.2407vh;
+	left: 0vw;
+	top: 0vh;
+	overflow: visible;
+}
+
+#crownsmall {
+	position: absolute;
+	width: 2.1354vw;
+	height: 2.9476vh;
+	left: 10.8333vw;
+	top: 14.4444vh;
+	overflow: visible;
+}
+
+#privileges {
+	filter: drop-shadow(0vw 0vw 0.2083vw rgba(255, 255, 255, 1));
+	left: 6.4062vw;
+	top: 25.5556vh;
+	position: absolute;
+	overflow: visible;
+	width: 10.9896vw;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.1458vw;
+	color: rgba(255,255,255,1);
+}
+
+#privilegeslist {
+	left: 5.1563vw;
+	top: 29.6296vh;
+	position: absolute;
+	overflow: scroll;
+	overflow-x: hidden;
+	width: 12.8125vw;
+	height: 14.8148vh;
+	text-align: left;
+	font-family: Akrobat;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.0417vw;
+	color: rgba(255,255,255,1);
+}
+
+#privilegeslist::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+#privilegeslist::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+#privilegeslist::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border-radius: 10px;
+}
