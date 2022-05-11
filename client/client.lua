@@ -10,7 +10,6 @@ Citizen.CreateThread(function()
 	while ESX.GetPlayerData().job == nil do 
         Wait(250)
     end
-	PlayerData = ESX.GetPlayerData()
     
     ESX.PlayerData = ESX.GetPlayerData()
 end)
@@ -21,7 +20,7 @@ function SetDisplay(bool)
         status = bool,
     })
 
-	SetNuiFocus(bool, bool)
+    SetNuiFocus(bool, bool)
     
     -- Player's character name
     ESX.TriggerServerCallback('id_mainmenu:getPlayerName', function(playername)
