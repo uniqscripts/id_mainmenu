@@ -1,7 +1,7 @@
 First of all, if you have no idea what you are doing, ask for support on our Discord server - https://discord.gg/WRknrjMZAS
 
 If you want to change anything in the menu, for example: 
-SHOP > MY GARAGE
+**SHOP > MY GARAGE**
 you can do that in the HTML file, if you need help, we will be happy to provide it to you :)
 
 # Setting up Level System:
