@@ -29,8 +29,7 @@ Setting up this resource is **not difficult** at all, you need the most basic kn
 
 > **Instructions** for setting up this resource can be found in the **SETUP.md** file.
 
-In the upcoming period, various updates will be done on this resource, and some of them are::
-* QBCore version
+In the upcoming period, various updates will be done on this resource, and some of them are:
 * Better and simpler configuration
 * Level System connected with this menu
 * Shop System connected with this menu
