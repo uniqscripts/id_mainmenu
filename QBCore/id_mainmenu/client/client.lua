@@ -1,15 +1,23 @@
 local QBCore = exports['qb-core']:GetCoreObject()
 local inMenu = false
 
-function QBCore.Functions.GetPlayerData(cb)
-    if cb then
-        cb(QBCore.PlayerData)
-    else
-        return QBCore.PlayerData
-    end
-end
+local player = {}
 
-local player = QBCore.Functions.GetPlayerData()
+RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
+    player = QBCore.Functions.GetPlayerData()
+end)
+
+RegisterNetEvent('QBCore:Client:OnJobUpdate', function(JobInfo)
+    player.job = JobInfo
+end)
+
+-- Incase restarting the resource this will get the PlayerData.
+Citizen.CreateThread(function()
+    while not QBCore.Functions.GetPlayerData() do
+        Citizen.Wait(1)
+    end
+    player = QBCore.Functions.GetPlayerData()
+end)
 
 function SetDisplay(bool)
     SendNUIMessage({
@@ -20,27 +28,19 @@ function SetDisplay(bool)
 	SetNuiFocus(bool, bool)
     
     -- Player's character name
-    QBCore.Functions.TriggerCallback('id_mainmenu:getPlayerName', function(playername)
-        SendNUIMessage({action = 'playername', value = playername})
-    end)
+    SendNUIMessage({action = 'playername', value = player.charinfo.firstname .. ' ' .. player.charinfo.lastname})
     
     -- Phone Number
-    QBCore.Functions.TriggerCallback('id_mainmenu:getPhoneNumber', function(phonenumber)
-        SendNUIMessage({action = 'phonenumber', value = phonenumber})
-    end)
+    SendNUIMessage({action = 'phonenumber', value = player.charinfo.phone})
 
     -- Job Name and Grade
-    SendNUIMessage({action = 'jobname', value = player.job.name .. ' - ' .. player.job.grade.name})
+    SendNUIMessage({action = 'jobname', value = player.job.label .. ' - ' .. player.job.grade.name})
 
     -- Money in hand (cash)
-    QBCore.Functions.TriggerCallback('id_mainmenu:getCash', function(walletamount)
-        SendNUIMessage({action = 'walletamount', value = walletamount})
-    end)
+    SendNUIMessage({action = 'walletamount', value = player.money['cash']})
 
     -- Bank Money
-    QBCore.Functions.TriggerCallback('id_mainmenu:getBank', function(bankamount)
-        SendNUIMessage({action = 'bankamount', value = bankamount})
-    end)
+    SendNUIMessage({action = 'bankamount', value = player.money['bank']})
     
     -- Administration Contact
     if GlobalState.AdminContact then
