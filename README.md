@@ -3,7 +3,7 @@
 <br />
 <div align="center">
   <a href="https://infinity-devt.com">
-    <img src="https://i.imgur.com/beMQ4GD.png" alt="Main Menu">
+    <img src="https://forum.cfx.re/uploads/default/optimized/4X/9/b/7/9b7bea96217110226415cc756ce917f83987cb5a_2_690x388.jpeg" alt="Main Menu">
   </a>
 
   <h3 align="center">Main Menu</h3>
